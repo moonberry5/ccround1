@@ -1,0 +1,639 @@
+@import url('https://fonts.cdnfonts.com/css/tasa-orbiter-display');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/menlo');
+@import url('https://fonts.cdnfonts.com/css/lato');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: #222222;
+}
+
+.green{
+    color:#44d62c;
+}
+
+ul{
+    list-style-type: none;
+    display:flex;
+    justify-content:center;
+    padding:0;
+}
+
+.navbar-container {
+    top: 0;
+    background-color: black;
+    border-bottom: 2px solid #44d62c;
+    position: sticky;
+    z-index: 1000;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+.logo {
+    height: 30px;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+.nav-links li {
+    margin: 0 15px;
+}
+.nav-links a {
+    color: #A4A4A4;
+    text-decoration: none;
+    font-size: 14px;
+}
+.nav-icons {
+    display: flex;
+    gap: 15px;
+}
+.nav-icons i {
+    color: white;
+    font-size: 18px;
+}
+.menu-toggle {
+    font-size: 24px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display:none;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(12px);
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 30px;
+}
+.sidebar li {
+    width: 100%;
+}
+.sidebar a {
+    width: 100%;
+    padding: 15px;
+    display: block;
+    color: #A4A4A4;
+    text-decoration: none;
+}
+.sidebar a:hover {
+    background-color: #222;
+}
+@media (max-width: 1200px) {
+    .navbar {
+        position: relative;
+    }
+    .menu-toggle {
+        display: block;
+        order: -1;
+    }
+    .logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .nav-links {
+        display: none;
+    }
+}
+
+.promo-banner {
+    background-color: #555555;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.section-1 {
+    background-image: url("//assets2.razerzone.com/images/pnx.assets/14bec6c1bc91419670b38d9acedb4b6b/razer-viper-v3-pro-faker-edition-homepage-desktop2x.webp");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100vw;
+    height: 75vh;
+    margin-bottom:1.5vh;
+    color: white;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align: center;
+    padding-top:4vh;
+    @media (max-width:767px) {
+        background-image:url("//assets2.razerzone.com/images/pnx.assets/14bec6c1bc91419670b38d9acedb4b6b/razer-viper-v3-pro-faker-edition-mobile2x.webp");
+    }
+}
+
+.section1-heading p {
+    font-family: 'TASA Orbiter Display', sans-serif;
+    font-size: 3rem; 
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.section1-subheading p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 5px 0; 
+}
+
+.section1-text ul{
+    gap:10px;
+    font-size:1.2rem;
+}
+
+@media (max-width: 500px) {
+    .section1-heading p {
+        font-size: 2rem;
+    }
+    .section1-subheading p {
+        font-size: 1rem;
+    }
+}
+
+.section-2 {
+    background-image: url("//assets2.razerzone.com/images/pnx.assets/14bec6c1bc91419670b38d9acedb4b6b/razer-customs-pochacco-homepage-desktop2x.webp");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100vw;
+    height: 75vh;
+    margin-bottom:1.5vh;
+    color: black;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align: center;
+    padding-top:4vh;
+    @media (max-width:767px) {
+        background-image:url("//assets2.razerzone.com/images/pnx.assets/14bec6c1bc91419670b38d9acedb4b6b/razer-customs-pochacco-homepage-mobile2x.webp");
+    }
+}
+
+.section2-heading p {
+    font-family: 'TASA Orbiter Display', sans-serif;
+    font-size: 3rem; 
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.section2-subheading p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 5px 0; 
+}
+
+.section2-text ul{
+    gap:10px;
+    font-size:1.2rem;
+}
+
+@media (max-width: 500px) {
+    .section2-heading p {
+        font-size: 2rem;
+    }
+    .section2-subheading p {
+        font-size: 1rem;
+    }
+}
+
+.section-3 {
+    background-image: url("//assets2.razerzone.com/images/pnx.assets/14bec6c1bc91419670b38d9acedb4b6b/razer-valentines-campaign-homepage-desktop2x.webp");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100vw;
+    height: 75vh;
+    margin-bottom:1.5vh;
+    color: black;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align: center;
+    padding-top:4vh;
+    @media (max-width:767px) {
+        background-image:url("//assets2.razerzone.com/images/pnx.assets/14bec6c1bc91419670b38d9acedb4b6b/razer-valentines-campaign-homepage-mobile2x.webp");
+    }
+}
+
+.section3-heading p {
+    font-family: 'TASA Orbiter Display', sans-serif;
+    font-size: 3rem; 
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.section3-subheading p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 5px 0; 
+}
+
+.section3-text ul{
+    gap:10px;
+    font-size:1.2rem;
+}
+
+@media (max-width: 500px) {
+    .section3-heading p {
+        font-size: 2rem;
+    }
+    .section3-subheading p {
+        font-size: 1rem;
+    }
+}
+
+.section-4, 
+.section-5, 
+.section-6{
+    display:flex;
+    justify-content: space-between;
+    @media (max-width:767px){
+        flex-direction: column;
+        flex:1;
+    }
+}
+
+.section-4 .div1 {
+    background-image: url("//assets2.razerzone.com/images/pnx.assets/ce1f318ec71427f1650aa240502c7258/razer-wolverine-v3-line-white-b-950x580-desktop.webp");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding:0 10px;
+    width: 49vw;
+    height: 75vh;
+    margin-bottom:1.5vh;
+    color: white;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align: center;
+    padding-top:4vh;
+    @media (max-width:767px) {
+        background-image:url("//assets2.razerzone.com/images/pnx.assets/ce1f318ec71427f1650aa240502c7258/razer-wolverine-v3-line-white-b-480x615-mobile.webp");
+
+        width:100vw;
+    }
+}
+
+.section4-heading p {
+    font-family: 'TASA Orbiter Display', sans-serif;
+    font-size: 3rem; 
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.section4-subheading p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 5px 0; 
+}
+
+.section4-text ul{
+    gap:10px;
+    font-size:1.2rem;
+}
+
+@media (min-width:500px) and (max-width:1200px){
+    .section4-heading p {
+        font-size: 2.3rem;
+    }
+    .section4-subheading p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .section4-heading p {
+        font-size: 2rem;
+    }
+    .section4-subheading p {
+        font-size: 1rem;
+    }
+}
+.section-4 .div2 {
+    background-image: url("//assets2.razerzone.com/images/pnx.assets/795a822cc568fe2c9d3cbb1c579a6d4e/razer-blade-16-2025-b-950x580-desktop.webp");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 49vw;
+    height: 75vh;
+    margin-bottom:1.5vh;
+    color: white;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align: center;
+    padding-top:4vh;
+    @media (max-width:767px) {
+        background-image:url("//assets2.razerzone.com/images/pnx.assets/795a822cc568fe2c9d3cbb1c579a6d4e/razer-blade-16-2025-b-480x615-mobile.webp");
+        width:100vw;
+    }
+}
+
+
+
+.section-5 .div1 {
+    background-image: url("//assets2.razerzone.com/images/pnx.assets/ce1f318ec71427f1650aa240502c7258/ser-950x580-desktop.webp");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding:0 10px;
+    width: 49vw;
+    height: 75vh;
+    margin-bottom:1.5vh;
+    color: white;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align: center;
+    padding-top:4vh;
+    @media (max-width:767px) {
+        background-image:url("//assets2.razerzone.com/images/pnx.assets/ce1f318ec71427f1650aa240502c7258/ser-480x615-mobile.webp");
+        width:100vw;
+    }
+}
+
+.section5-heading p {
+    font-family: 'TASA Orbiter Display', sans-serif;
+    font-size: 3rem; 
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.section5-subheading p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 5px 0; 
+}
+
+.section5-text ul{
+    gap:10px;
+    font-size:1.2rem;
+}
+
+@media (min-width:500px) and (max-width:1200px){
+    .section5-heading p {
+        font-size: 2.3rem;
+    }
+    .section5-subheading p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .section5-heading p {
+        font-size: 2rem;
+    }
+    .section5-subheading p {
+        font-size: 1rem;
+    }
+}
+.section-5 .div2 {
+    background-image: url("//assets2.razerzone.com/images/pnx.assets/497999a3c851bdfa3bce19539113436a/razer-x-kuromi-b-950x580-desktop-collab.webp");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 49vw;
+    height: 75vh;
+    margin-bottom:1.5vh;
+    color: white;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align: center;
+    padding-top:4vh;
+    @media (max-width:767px) {
+        background-image:url("//assets2.razerzone.com/images/pnx.assets/795a822cc568fe2c9d3cbb1c579a6d4e/razer-and-kuromi-collab-b-480x615-mobile.webp");
+        width:100vw;
+    }
+}
+
+
+
+.section-6 .div1 {
+    background-image: url("//assets2.razerzone.com/images/pnx.assets/795a822cc568fe2c9d3cbb1c579a6d4e/razer-handheld-dock-chroma-b-950x580-desktop.webp");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding:0 10px;
+    width: 49vw;
+    height: 75vh;
+    margin-bottom:1.5vh;
+    color: white;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align: center;
+    padding-top:4vh;
+    @media (max-width:767px) {
+        background-image:url("//assets2.razerzone.com/images/pnx.assets/795a822cc568fe2c9d3cbb1c579a6d4e/razer-handheld-dock-chroma-b-480x615-mobile.webp");
+        width:100vw;
+    }
+}
+
+.section6-heading p {
+    font-family: 'TASA Orbiter Display', sans-serif;
+    font-size: 3rem; 
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.section6-subheading p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 5px 0; 
+}
+
+.section6-text ul{
+    gap:10px;
+    font-size:1.2rem;
+}
+
+@media (min-width:500px) and (max-width:1200px){
+    .section6-heading p {
+        font-size: 2.3rem;
+    }
+    .section6-subheading p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .section6-heading p {
+        font-size: 2rem;
+    }
+    .section6-subheading p {
+        font-size: 1rem;
+    }
+}
+.section-6 .div2 {
+    background-image: url("//assets2.razerzone.com/images/pnx.assets/bbffede42365ea3ed65d0b13ab080c48/razer-esports-line-b-950x580-desktop-v2.webp");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 49vw;
+    height: 75vh;
+    margin-bottom:1.5vh;
+    color: white;
+    display:flex; 
+    flex-direction:column;
+    align-items:center;
+    text-align: center;
+    padding-top:4vh;
+    @media (max-width:767px) {
+        background-image:url("//assets2.razerzone.com/images/pnx.assets/bbffede42365ea3ed65d0b13ab080c48/razer-esports-line-b-480x615-mobile-v2.webp");
+        width:100vw;
+    }
+}
+
+.footer {
+    background-color: #111;
+    color: white;
+    padding: 40px 10%;
+    font-family: Arial, sans-serif;
+}
+
+.footer h4{
+    font-family: 'TASA Orbiter Display', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 180px;
+}
+
+.footer-column h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footer-column ul {
+    padding: 0;
+    display:flex;
+    flex-direction: column;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+    font-family: 'Lato', sans-serif;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #00ff00;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    font-size: 1.4rem;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #00ff00;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 30px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+}
+
+/* Ensure elements in the footer bottom are spaced evenly */
+.footer-bottom p, .footer-bottom ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Links */
+.footer-bottom ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-bottom ul li a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: 0.3s;
+}
+
+.footer-bottom ul li a:hover {
+    color: #00ff00;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .footer-bottom ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
